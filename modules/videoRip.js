@@ -6,12 +6,12 @@ async function videoRip(srcUrl){
         //progress: true,
         //Will implement progress tracker later
     }).then(output => {
-        console.log('Downloading...')
+        console.log('Downloaded!')
         console.log(output)
     }).catch(err => {
         console.error(err)
     });
-    console.log('Downloaded!')   
+    console.log('Downloading...')   
 }
 module.exports = {
     videoRip
