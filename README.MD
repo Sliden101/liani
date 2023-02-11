@@ -1,4 +1,6 @@
 # LiAni
+<p align="center">
+<img src="./lianiDemo.gif"></p>
 
 LiAni (libre anime) is an anime downloader, I dunno why I've named it this way I just thought it'd be cool.
 
