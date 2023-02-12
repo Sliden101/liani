@@ -16,3 +16,4 @@ Liani downloads anime from https://ww4.gogoanimes.org and is heavily hardcoded, 
 # Todo
 - [ ] Progress Tracking
 - [ ] Batch Download
+- [ ] Fix reliance on 9anime2 since most new anime is on playgo
