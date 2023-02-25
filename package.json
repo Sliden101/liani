@@ -1,21 +1,17 @@
 {
   "dependencies": {
     "axios": "^1.3.2",
-    "cheerio": "^1.0.0-rc.12",
     "commander": "^10.0.0",
     "prompt-sync": "^4.2.0",
-    "puppeteer": "^19.6.3",
-    "request-promise-native": "^1.0.9",
-    "youtube-dl-exec": "^2.2.3"
+    "youtube-dl-exec": "^2.2 .3"
   },
   "bin": {
     "liani": "index.js"
   },
   "name": "liani",
   "description": "LiAni (libre anime) is an anime downloader.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "author": "Sliden101",
   "license": "ISC"
 }

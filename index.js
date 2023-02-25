@@ -13,7 +13,7 @@ program.command('download')
   .description('Le download')
   .argument('<title>', 'search for anime to download')
   .action((str) => {
-    scrape.search(`https://ww4.gogoanimes.org//search?keyword=${str}`);
+    scrape.search(`https://kisskh.me/api/DramaList/Search?q=${str}`);
   });
   
 program.parse();
