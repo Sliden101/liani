@@ -2,7 +2,7 @@
 
 const { Command } = require('commander');
 const program = new Command();
-let scrape = require('./modules/scrape.js');
+let scrape = require('./modules/kissKhScrape.js');
 
 program
   .name('liani')

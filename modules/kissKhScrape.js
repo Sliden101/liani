@@ -59,4 +59,3 @@ module.exports = {
     search,
     download
 }
-search("https://kisskh.me/api/DramaList/Search?q=Mushishi")
