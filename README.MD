@@ -14,6 +14,6 @@ LiAni (libre anime) is an anime downloader, I dunno why I've named it this way I
 Liani downloads anime + more from https://kisskh.me.
  
 # Todo
-- [ ] Progress Tracking
+- [x] Progress Tracking
 - [ ] Batch Download
 - [ ] Choose Quality 

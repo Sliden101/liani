@@ -1,17 +1,12 @@
 const youtubedl = require('youtube-dl-exec')
+const logger = require('progress-estimator')()
 
 async function videoRip(srcUrl){
-    youtubedl(srcUrl, {
-        //quiet : true,
-        //progress: true,
-        //Will implement progress tracker later
-    }).then(output => {
-        console.log('Downloaded!')
-        console.log(output)
-    }).catch(err => {
-        console.error(err)
-    });
-    console.log('Downloading...')   
+    const promise = youtubedl(srcUrl, {
+        dumpSingleJson: true 
+    })
+    const progress = await logger(promise, `Obtaining ${url}`)
+    console.log(progress)
 }
 module.exports = {
     videoRip
