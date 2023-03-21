@@ -1,7 +1,7 @@
 'use strict';
 const axios = require("axios");
 const prompt = require('prompt-sync')();
-const rip = require('./ytDlpRip.js')
+const rip = require('./ytDlpRip.js');
 
 async function search(url){
   await axios.get(url)
@@ -18,13 +18,16 @@ async function search(url){
       for (let i = 0; i < title.length; i++) {
         console.log(`${i+1}. ${title[i]}`);
       }
-      let choice = prompt('Enter the number of the anime you want to download: ');
-      console.log(`You chose ${title[choice-1]}`);
-      let choiceIndex = choice - 1;
-      console.log(`There are ${epCount[choiceIndex]} episodes`);
-      let epNum = prompt('Enter the number of the episode you want to download: ');
-      console.log(`You chose episode ${epNum}`);
-      download(id[choice-1], epNum);
+          let choice = prompt('Enter the number of the anime you want to download: ');
+
+          console.log(`You chose ${title[choice-1]}`);
+          let choiceIndex = choice - 1;
+          console.log(`There are ${epCount[choiceIndex]} episodes`);
+          let epNum = prompt('Enter the number of the episode you want to download: ');
+          console.log(`You chose episode ${epNum}`);
+          download(id[choice-1], epNum); 
+
+
     })
 
     .catch(err => {
@@ -48,7 +51,7 @@ async function streamExtract(epId){
   try {
     const response = await axios.get(`https://kisskh.me/api/DramaList/Episode/${epId}.png?err=false&ts=&time=`);
     rip.videoRip(response.data["Video"])
-
+    console.log(response.data["Video"]);
   } catch (error) {
     console.error(error);
   }
