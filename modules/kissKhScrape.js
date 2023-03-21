@@ -51,7 +51,6 @@ async function streamExtract(epId){
   try {
     const response = await axios.get(`https://kisskh.me/api/DramaList/Episode/${epId}.png?err=false&ts=&time=`);
     rip.videoRip(response.data["Video"])
-    console.log(response.data["Video"]);
   } catch (error) {
     console.error(error);
   }
